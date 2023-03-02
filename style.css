@@ -1,0 +1,66 @@
+* {
+    font-family: Verdana, Arial, sans-serif;
+    font-size: 1.5pc;
+    line-height: 2pc;
+    margin: 1pc;
+    overflow-x: hidden;
+    user-select: none;
+}
+
+canvas {
+    border: 1px solid #555;
+    border-radius: 0.2rem;
+    min-height: 200px;
+    max-height: 50vh;
+}
+
+form {
+    display: inline-block;
+}
+
+h1 {
+    font-size: 3pc;
+    font-weight: bold;
+}
+
+input {
+    border: 1px solid #555;
+    padding: 0.5pc;
+    margin: 1pc 0;
+}
+
+input:invalid~span::after {
+    color: red;
+    content: "✖";
+    font-size: 2pc;
+    vertical-align: sub;
+}
+
+input:valid~span::after {
+    color: green;
+    content: "✓";
+    font-size: 2pc;
+    vertical-align: sub;
+}
+
+input[type="submit"]:active {
+    opacity: 0.8;
+}
+
+input[type="text"] {
+    cursor: text;
+    max-width: 150px;
+    text-align: center;
+}
+
+input[type="text"]:invalid {
+    border-color: red;
+}
+
+input[type="text"]:valid {
+    border-color: green;
+}
+
+u {
+    margin: 0;
+}
